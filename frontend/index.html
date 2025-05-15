@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRQ-20 | Sistema de Monitoramento de Saúde Mental</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <a href="index.html">SRQ-20</a>
+        </div>
+        <nav>
+          <ul>
+            <!-- Navigation will be populated by JavaScript -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Monitoramento de Saúde Mental SRQ-20</h1>
+        <p>
+          Um sistema completo para avaliação e acompanhamento da saúde mental
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+      <!-- About SRQ-20 -->
+      <div class="card">
+        <h2 class="card-title">O que é o SRQ-20?</h2>
+        <div class="card-body">
+          <p>
+            O <strong>Self-Reporting Questionnaire (SRQ-20)</strong> é uma
+            ferramenta de triagem para identificar transtornos mentais
+            não-psicóticos desenvolvida pela Organização Mundial da Saúde (OMS).
+          </p>
+          <p>
+            Este questionário contém 20 perguntas com respostas sim/não e é
+            amplamente utilizado para identificar sofrimento mental em diversos
+            contextos, especialmente em ambientes de trabalho e serviços de
+            saúde.
+          </p>
+        </div>
+      </div>
+
+      <!-- How it works -->
+      <div class="card mt-3 card-how-it-works">
+        <h2 class="card-title">Como Funciona</h2>
+        <div class="card-body">
+          <p>O sistema funciona em três etapas simples:</p>
+          <ol>
+            <li>
+              <strong>Responda ao Questionário:</strong> Responda às 20
+              perguntas do SRQ-20 com "Sim" ou "Não".
+            </li>
+            <li>
+              <strong>Receba sua Avaliação:</strong> O sistema calcula
+              automaticamente sua pontuação (0-20) e classifica seu nível de
+              sofrimento mental.
+            </li>
+            <li>
+              <strong>Acompanhe seu Histórico:</strong> Veja seu progresso ao
+              longo do tempo e receba sugestões de atividades baseadas em sua
+              pontuação.
+            </li>
+          </ol>
+
+          <h3 class="mt-3 mb-2">Níveis de Classificação:</h3>
+          <ul>
+            <li>
+              <span class="result-level level-none">Nenhum</span> - 0 ponto
+            </li>
+            <li>
+              <span class="result-level level-mild">Leve</span> - 1 a 7 pontos
+            </li>
+            <li>
+              <span class="result-level level-moderate">Moderado</span> - 8 a 14
+              pontos
+            </li>
+            <li>
+              <span class="result-level level-severe">Grave</span> - 15 a 20
+              pontos
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Getting Started -->
+      <div class="card mt-3" id="gettingStarted">
+        <h2 class="card-title">Como Começar</h2>
+        <div class="card-body">
+          <p>Para utilizar o sistema SRQ-20 e monitorar sua saúde mental:</p>
+
+          <div id="notAuthenticatedContent">
+            <ol>
+              <li><a href="cadastro.html">Crie uma conta</a> no sistema</li>
+              <li><a href="login.html">Faça login</a> com suas credenciais</li>
+              <li>
+                Acesse o questionário e comece a monitorar sua saúde mental
+              </li>
+            </ol>
+            <div class="mt-3">
+              <a href="cadastro.html" class="btn btn-primary">Cadastrar</a>
+              <a
+                href="login.html"
+                class="btn btn-secondary"
+                style="margin-left: 10px"
+                >Entrar</a
+              >
+            </div>
+          </div>
+
+          <div id="authenticatedContent" style="display: none">
+            <ol>
+              <li>Acesse o <a href="srq20.html">questionário SRQ-20</a></li>
+              <li>Responda às 20 perguntas com sinceridade</li>
+              <li>
+                Visualize seus resultados e acompanhe seu
+                <a href="historico.html">histórico</a>
+              </li>
+            </ol>
+            <div class="mt-3">
+              <a href="srq20.html" class="btn btn-primary"
+                >Responder Questionário</a
+              >
+              <a
+                href="historico.html"
+                class="btn btn-secondary"
+                style="margin-left: 10px"
+                >Ver Histórico</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 SRQ-20 Sistema de Monitoramento de Saúde Mental</p>
+        <p>
+          Este sistema é apenas para fins educacionais e não substitui avaliação
+          profissional
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Display content based on authentication state
+      document.addEventListener("DOMContentLoaded", () => {
+        const notAuthContent = document.getElementById(
+          "notAuthenticatedContent"
+        );
+        const authContent = document.getElementById("authenticatedContent");
+
+        if (isAuthenticated()) {
+          notAuthContent.style.display = "none";
+          authContent.style.display = "block";
+        } else {
+          notAuthContent.style.display = "block";
+          authContent.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

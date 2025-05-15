@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultado | SRQ-20</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <a href="../index.html">SRQ-20</a>
+        </div>
+        <nav>
+          <ul>
+            <!-- Navigation will be populated by JavaScript -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-4 result-page">
+      <h2 class="mb-3">Seu Resultado</h2>
+
+      <div id="resultContainer">
+        <div class="text-center">
+          <p>Carregando resultado...</p>
+          <div class="loading-spinner" style="margin: 20px auto"></div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div class="card">
+          <h3 class="card-title">O que significa seu resultado?</h3>
+          <div class="card-body">
+            <p>
+              O SRQ-20 é uma ferramenta de triagem para identificar possíveis
+              transtornos mentais não-psicóticos. A pontuação varia de 0 a 20,
+              onde:
+            </p>
+            <ul>
+              <li>
+                <span class="result-level level-none">Nenhum</span> - 0 ponto:
+                Ausência de sofrimento mental significativo.
+              </li>
+              <li>
+                <span class="result-level level-mild">Leve</span> - 1 a 7
+                pontos: Sofrimento mental leve, que pode se beneficiar de
+                atenção e autocuidado.
+              </li>
+              <li>
+                <span class="result-level level-moderate">Moderado</span> - 8 a
+                14 pontos: Sofrimento mental moderado, que pode se beneficiar de
+                acompanhamento profissional.
+              </li>
+              <li>
+                <span class="result-level level-severe">Grave</span> - 15 a 20
+                pontos: Sofrimento mental grave, que requer atenção profissional
+                imediata.
+              </li>
+            </ul>
+            <p class="mt-3">
+              <strong>Importante:</strong> Este questionário não é um
+              diagnóstico e não substitui a avaliação de um profissional de
+              saúde mental.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 text-center">
+        <a href="srq20.html" class="btn btn-primary"
+          >Realizar Novo Questionário</a
+        >
+        <a
+          href="historico.html"
+          class="btn btn-secondary"
+          style="margin-left: 10px"
+          >Ver Histórico</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 SRQ-20 Sistema de Monitoramento de Saúde Mental</p>
+        <p>
+          Este sistema é apenas para fins educacionais e não substitui avaliação
+          profissional
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/srq20.js"></script>
+  </body>
+</html>

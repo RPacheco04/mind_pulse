@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionário SRQ-20 | SRQ-20</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <a href="index.html">SRQ-20</a>
+        </div>
+        <nav>
+          <ul>
+            <!-- Navigation will be populated by JavaScript -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-4 srq-page">
+      <div class="card">
+        <h2 class="card-title">Questionário SRQ-20</h2>
+        <div class="card-body">
+          <p>
+            Responda às perguntas abaixo com <strong>"Sim"</strong> ou
+            <strong>"Não"</strong> de acordo com como você tem se sentido nos
+            <strong>últimos 30 dias</strong>.
+          </p>
+          <p>
+            Sua pontuação será calculada automaticamente com base nas suas
+            respostas.
+          </p>
+
+          <div class="mt-4">
+            <form id="srq20Form">
+              <ul class="question-list" id="questionsList">
+                <div class="text-center">
+                  <p>Carregando perguntas...</p>
+                  <div class="loading-spinner" style="margin: 20px auto"></div>
+                </div>
+              </ul>
+
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">
+                  Enviar Respostas
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 SRQ-20 Sistema de Monitoramento de Saúde Mental</p>
+        <p>
+          Este sistema é apenas para fins educacionais e não substitui avaliação
+          profissional
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/srq20.js"></script>
+  </body>
+</html>
