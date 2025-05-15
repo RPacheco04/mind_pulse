@@ -1,4 +1,4 @@
-# Sistema de Monitoramento de Saúde Mental SRQ-20
+# MindPulse - Sistema de Monitoramento de Saúde Mental
 
 Este projeto é um sistema web de monitoramento da saúde mental de trabalhadores utilizando o questionário SRQ-20 (Self-Reporting Questionnaire), composto por um backend Django com REST API e um frontend HTML/CSS/JavaScript.
 
